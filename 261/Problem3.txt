@@ -1,0 +1,10 @@
+1. O(1)
+2. O(log n)
+3. O(m/n)
+4. O(m)
+5. O(log n)
+6. O(n)
+7. HeapSort is better
+8. SortedBag as a linked List
+9. Queue as a binary tree
+10. Stack implemented as alinked list
