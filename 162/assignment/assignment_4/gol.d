@@ -1,0 +1,1 @@
+gol.o: gol.cpp
