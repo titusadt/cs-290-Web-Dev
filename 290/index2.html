@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>TRAVEL BLOG</title>
+
+    <!-- This is a 3rd-party stylesheet to make available the font family to be used for this page ("Roboto"). -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+
+    <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome: http://fontawesome.com/ -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style2.css" media="screen">
+    <script src="index2.js" charset="utf-8" defer></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <!-- The <i> tag below includes the bullhorn icon from Font Awesome -->
+      <a href="#"><h1 class="site-title"><i class="fas fa-plane-departure"></i></i>PARIS</h1></a>
+
+      <nav class="navbar">
+        <ul class="navlist">
+          <li class="navitem navbar-search">
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fas fa-search"></i></button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="advice-container">
+
+      <article class="advice">
+        <div class="advice-icon">
+          <i class="fas fa-camera"></i>
+        </div>
+        <div class="advice-content">
+          <p class="advice-text">
+            Watching my web dev lecture... This class is so awesome!
+		  </p>
+          <ul class="author-list">
+			<li class= "interaction-bar">
+				<a href="#">CSMajor2020</a>
+				<button type="button" class="create-like-button"><i class="far fa-heart"></i></i></button>
+				<button type="button" class="create-comment-button"><i class="far fa-comment"></i></i></button>
+				<button type="button" class="create-image-button"><i class="fal fa-image"></i></i></button>
+
+			</li>
+		</ul>
+        </div>
+      </article>
+
+      <article class="advice">
+        <div class="advice-icon">
+          <i class="fas fa-camera"></i>
+        </div>
+        <div class="advice-content">
+          <p class="advice-text">
+            lalalalalalalalallalalalalalalalalalal
+          </p>
+          <ul class="author-list">
+			<li class= "interaction-bar">
+				<a href="#">lalalalala</a>
+				<button type="button" class="create-like-button"><i class="far fa-heart"></i></i></button>
+				<button type="button" class="create-comment-button"><i class="far fa-comment"></i></i></button>
+				<button type="button" class="create-image-button"><i class="fal fa-image"></i></i></button>
+
+			</li>
+		</ul>
+        </div>
+      </article>
+
+      <article class="advice">
+        <div class="advice-icon">
+          <i class="fas fa-camera"></i>
+        </div>
+        <div class="advice-content">
+          <p class="advice-text">
+           lalal
+		  </p>
+		  <ul class="author-list">
+			<li class= "interaction-bar">
+				<a href="#">lala</a>
+				<button type="button" class="create-like-button"><i class="far fa-heart"></i></i></button>
+				<button type="button" class="create-comment-button"><i class="far fa-comment"></i></i></button>
+				<button type="button" class="create-image-button"><i class="fal fa-image"></i></i></button>
+			</li>
+		</ul>
+
+        </div>
+      </article>
+
+      <article class="advice">
+        <div class="advice-icon">
+          <i class="fas fa-camera"></i>
+        </div>
+        <div class="advice-content">
+          <p class="advice-text">
+            la
+		  </p>
+		  <ul class="author-list">
+			<li class= "interaction-bar">
+				<a href="#">la</a>
+				<button type="button" class="create-like-button"><i class="far fa-heart"></i></i></button>
+				<button type="button" class="create-comment-button"><i class="far fa-comment"></i></i></button>
+				<button type="button" class="create-image-button"><i class="fal fa-image"></i></i></button>
+			</li>
+		</ul>
+
+        </div>
+      </article>
+
+
+
+    </main>
+
+    <button type="button" id="create-twit-button"><i class="fas fa-bullhorn"></i></button>
+
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="create-advice-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Add a Comment</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="advice-input-element">
+            <label for="advice-text-input">Comment</label>
+            <textarea id="advice-text-input"></textarea>
+          </div>
+          <div class="advice-input-element">
+            <label for="advice-attribution-input">Author</label>
+            <input type="advice" id="advice-attribution-input">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Create Twit</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!--PHOTOCARD STUFF-->
+    <div class="photo-card-container">
+
+      <section class="photo-card">
+        <div class="img-container">
+          <img class="person-photo-img" src="https://i.kinja-img.com/gawker-media/image/upload/s--c-ZfGdaN--/c_scale,f_auto,fl_progressive,q_80,w_800/qsjzp4ryybdx6uo4t4aw.png" />
+        </div>
+        <div class="caption">
+          Skeptical Leia.
+        </div>
+      </section>
+    </div>
+
+    <!--Modal for picture input-->
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="create-picture-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Add a Picture</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="photo-input-element">
+            <label for="photo-url-input">insert URL</label>
+            <textarea id="photo-url-input"></textarea>
+          </div>
+          <div class="photo-input-element">
+            <label for="photo-caption-input">Caption</label>
+            <input type="photo" id="photo-caption-input">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Add Picture</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
